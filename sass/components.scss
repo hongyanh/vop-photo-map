@@ -1,0 +1,67 @@
+.card {
+  @extend .shadow-lb;
+}
+.bg-img-fix {
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+.bg-img {
+  background: url(../images/bg.jpg) no-repeat center center; 
+  background-size: cover;
+  position: relative;
+}
+.cover {
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.center-v {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bg-video {
+  position: relative;
+  overflow: hidden;
+}
+video#bgvid {
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.flash-pri {
+  @extend .pri-bd-l;
+  padding: $size-r1;
+  background-color: $primary-base;
+  color: $white-base;
+}
+.flash-sec {
+  @extend .sec-bd-l;
+  padding: $size-r1;
+  background-color: $secondary-base;
+  color: $white-base;
+}
+.flash-ter {
+  @extend .ter-bd-l;
+  padding: $size-r1;
+  background-color: $tertiary-base;
+  color: $white-base;
+}
+nav > ul > li {
+  display: inline-block;
+  margin: $size-r1;
+}
+.pri-bg > ul > li > a,.sec-bg > ul > li > a,.ter-bg > ul > li > a {
+  color: $white-base;
+}
+.pri-bg > ul > li > a:hover,.sec-bg > ul > li > a:hover,.ter-bg > ul > li > a:hover {
+  color: $white-light;
+}
+.circle {
+  border-radius: 50%;
+}
+.round {
+  border-radius: $size-r1;
+}
